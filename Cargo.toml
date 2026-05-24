@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = []
+members = ["tokio_learn"]
 
 
 [workspace.lints.clippy]
@@ -8,7 +8,7 @@ all = "warn"
 pedantic = "warn"
 
 [workspace.dependencies]
-
+tokio = { version = "1", features = ["full"] }
 
 [profile.release]
 lto = true
